@@ -1,6 +1,7 @@
 * {
     --lavender: #bb99ff;
     --matcha: #ace600;
+    --slate: #333333;
 }
 
 
@@ -11,20 +12,41 @@ body{
 
 
 #heading {
+    text-align: center;
     color:var(--matcha);
     font-family: "Quicksand", sans-serif;
-    font-size: 80pt;
-    line-height: 150%;
+    font-size: 96pt;
+    line-height: 135px;
     text-transform: uppercase;
-    font-weight: 500%;
+    font-weight: 500;
 }
 
 .description {
-
+    font-family: "Quicksand", sans-serif;
+    color: var(--slate);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 40px;
 }
 
 .description > ul {
+    list-style-type: circle;
+    margin: 10px;
+}
 
+
+.description > ul > li > a, a:visited {
+    color: var(--matcha);
+    text-decoration: none;
+}
+
+
+.description > ul > li > a:active {
+    color: var(--slate);
+    background-color: var(--matcha);
+    font-weight: 800;
+    text-decoration: none;
 }
 
 nav {
@@ -33,37 +55,72 @@ nav {
 }
 
 nav > ul {
-    font-size: 24pt;
+    text-align: center;
+    font-size: 36pt;
     line-height: 150%;
+    color: var(--slate);
+    font-family: "Quicksand", sans-serif;
+    font-weight: 200;
+    list-style-type: none;
 }
 
-nav > ul > li {
+nav > ul > li > a, a:visited {
+    color: var(--matcha);
+    text-decoration: none;
+}
 
+nav > ul > li > a, a:visited {
+    color: var(--lavender);
+    text-decoration: none;
 }
 
 h1 {
     font-family: "Quicksand", sans-serif;
     color: var(--matcha);
-    font-size: 60px;
+    font-size: 60pt;
     font-style: normal;
-    font-weight: 400%;
-    line-height: 140%;
-
+    font-weight: 500;
+    line-height: 140px;
 }
 
 h2 {
     color: var(--matcha);
+    text-align: center;
+    font-family: "Quicksand", sans-serif;
+    font-size: 48pt;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
 }
 
 h3 {
     color: var(--matcha);
+    text-align: center;
+    font-family: "Quicksand", sans-serif;
+    font-size: 36pt;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+}
+
+caption {
+    font-family: "Quicksand", sans-serif;
+    text-transform: lowercase;
+    color: var(--slate);
+    font-size: 24pt;
+    font-weight: 700;
 }
 
 strong {
-
+    font-family: "Quicksand", sans-serif;
+    color: var(--lavender);
+    background-color: var(--matcha);
+    font-weight: 800;
 }
 
-italic {
-
+i {
+    font-family: "Quicksand", sans-serif;
+    color: var(--lavender);
+    background-color: var(--matcha);
+    font-weight: 600;
 }
-

@@ -22,8 +22,6 @@ body {
     font-size: 2rem;
 }
 
-.container-content>div {}
-
 #heading {
     text-align: center;
     color: var(--matcha);
@@ -106,7 +104,7 @@ nav>#menu>span {
     position: relative;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -45%);
 }
 
 nav>ul>li {
@@ -182,8 +180,13 @@ i {
 }
 
 @media only screen and (max-width: 600px) {
-    *{
+    * {
         font-size: 10px;
+    }
+
+    #heading{
+        margin-left: 10vw;
+        text-align: center;
     }
 
     nav {
@@ -209,7 +212,7 @@ i {
         align-items: center;
     }
 
-    nav > #menu {
+    nav>#menu {
         display: none;
     }
 

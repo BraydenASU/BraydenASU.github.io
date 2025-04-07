@@ -52,8 +52,7 @@ body {
     margin: 10px;
 }
 
-.description>ul>li>a,
-a:visited {
+.description>ul>li>a {
     color: var(--matcha);
     text-decoration: none;
     font-size: 2rem;
@@ -64,6 +63,12 @@ a:visited {
     background-color: var(--matcha);
     font-weight: 800;
     text-decoration: none;
+}
+
+.description>ul>li>a:visited {
+    color: var(--slate);
+    text-decoration: dashed;
+    font-size: 2rem;
 }
 
 nav {
@@ -177,7 +182,7 @@ i {
         font-size: 10px;
     }
 
-    #heading{
+    #heading {
         margin-left: 10vw;
         text-align: center;
     }

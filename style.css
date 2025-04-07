@@ -158,7 +158,7 @@ h3 {
 caption {
     font-family: "Quicksand", sans-serif;
     text-transform: lowercase;
-    color: var(--slate);
+    color: black;
     font-size: 2rem;
     font-weight: 700;
 }

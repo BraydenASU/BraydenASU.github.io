@@ -67,8 +67,7 @@ body {
 
 .description>ul>li>a:visited {
     color: var(--slate);
-    text-decoration: dashed;
-    font-size: 2rem;
+    text-decoration: none;
 }
 
 nav {

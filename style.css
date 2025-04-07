@@ -2,47 +2,67 @@
     --lavender: #bb99ff;
     --matcha: #ace600;
     --slate: #333333;
+    font-size: 12px;
 }
 
-
-
-body{
+body {
+    position: relative;
     background-color: var(--lavender);
+    margin: 0px;
+    padding: 0px;
+    font-size: 1rem;
 }
 
+.container-content {
+    position: relative;
+    left: 25vw;
+    padding: 36px;
+    margin: 24px;
+    width: 65vw;
+    font-size: 2rem;
+}
+
+.container-content>div {}
 
 #heading {
     text-align: center;
-    color:var(--matcha);
+    color: var(--matcha);
     font-family: "Quicksand", sans-serif;
-    font-size: 96pt;
+    font-size: 8rem;
     line-height: 135px;
     text-transform: uppercase;
     font-weight: 500;
+    text-decoration: underline;
 }
 
 .description {
     font-family: "Quicksand", sans-serif;
     color: var(--slate);
-    font-size: 24px;
+    font-size: 2rem;
     font-style: normal;
     font-weight: 300;
     line-height: 40px;
 }
 
-.description > ul {
+.description>div {
+
+    font-size: 2rem;
+
+}
+
+.description>ul {
     list-style-type: circle;
     margin: 10px;
 }
 
-
-.description > ul > li > a, a:visited {
+.description>ul>li>a,
+a:visited {
     color: var(--matcha);
     text-decoration: none;
+    font-size: 2rem;
 }
 
-
-.description > ul > li > a:active {
+.description>ul>li>a:active {
     color: var(--slate);
     background-color: var(--matcha);
     font-weight: 800;
@@ -52,11 +72,19 @@ body{
 nav {
     background-color: var(--matcha);
     font-family: "Quicksand", sans-serif;
+    position: fixed;
+    top: 0px;
+    width: 25vw;
+    height: 100vh;
+    font-size: 3rem;
 }
 
-nav > ul {
+nav>ul {
+    margin-left: 0px;
+    margin-top: 121px;
+    padding: 0px;
     text-align: center;
-    font-size: 36pt;
+    font-size: 3rem;
     line-height: 150%;
     color: var(--slate);
     font-family: "Quicksand", sans-serif;
@@ -64,12 +92,39 @@ nav > ul {
     list-style-type: none;
 }
 
-nav > ul > li > a, a:visited {
+nav>#menu {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    background-color: var(--lavender);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+
+}
+
+nav>#menu>span {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+nav>ul>li {
+    margin: 0px;
+    padding: 0px;
+}
+
+nav>ul>li>a,
+a:visited {
+    font-size: 3rem;
     color: var(--matcha);
     text-decoration: none;
 }
 
-nav > ul > li > a, a:visited {
+nav>ul>li>a,
+a:visited {
+    font-size: 3rem;
     color: var(--lavender);
     text-decoration: none;
 }
@@ -77,7 +132,7 @@ nav > ul > li > a, a:visited {
 h1 {
     font-family: "Quicksand", sans-serif;
     color: var(--matcha);
-    font-size: 60pt;
+    font-size: 5rem;
     font-style: normal;
     font-weight: 500;
     line-height: 140px;
@@ -87,7 +142,7 @@ h2 {
     color: var(--matcha);
     text-align: center;
     font-family: "Quicksand", sans-serif;
-    font-size: 48pt;
+    font-size: 4rem;
     font-style: normal;
     font-weight: 500;
     line-height: 140%;
@@ -97,7 +152,7 @@ h3 {
     color: var(--matcha);
     text-align: center;
     font-family: "Quicksand", sans-serif;
-    font-size: 36pt;
+    font-size: 3rem;
     font-style: normal;
     font-weight: 500;
     line-height: 140%;
@@ -107,12 +162,13 @@ caption {
     font-family: "Quicksand", sans-serif;
     text-transform: lowercase;
     color: var(--slate);
-    font-size: 24pt;
+    font-size: 2rem;
     font-weight: 700;
 }
 
 strong {
     font-family: "Quicksand", sans-serif;
+    font-size: 2rem;
     color: var(--lavender);
     background-color: var(--matcha);
     font-weight: 800;
@@ -120,6 +176,7 @@ strong {
 
 i {
     font-family: "Quicksand", sans-serif;
+    font-size: 2rem;
     color: var(--lavender);
     background-color: var(--matcha);
     font-weight: 600;

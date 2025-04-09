@@ -118,6 +118,7 @@ nav>ul>li {
 
 nav>ul>li>a,
 a:visited {
+    padding: 10px;
     font-size: 3rem;
     color: var(--lavender);
     text-decoration: none;
@@ -126,6 +127,7 @@ a:visited {
 h1 {
     font-family: "Quicksand", sans-serif;
     color: var(--matcha);
+    padding-left: 25px;
     font-size: 5rem;
     font-style: normal;
     font-weight: 500;

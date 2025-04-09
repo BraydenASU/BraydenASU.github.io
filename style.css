@@ -44,6 +44,8 @@ body {
 
 .description>div {
     font-size: 2rem;
+    background-color: rgba(255, 255, 255, .25);
+    text-indent: 50px;
 }
 
 .description>ul {
@@ -58,15 +60,10 @@ body {
     font-size: 2rem;
 }
 
-.description>ul>li>a:active {
+.description>ul>li>a:active,a:visited {
     color: var(--slate);
     background-color: var(--matcha);
     font-weight: 800;
-    text-decoration: none;
-}
-
-.description>ul>li>a:visited {
-    color: var(--slate);
     text-decoration: none;
 }
 
@@ -131,7 +128,7 @@ h1 {
     font-size: 5rem;
     font-style: normal;
     font-weight: 500;
-    line-height: 140px;
+    line-height: 80px;
 }
 
 h2 {
@@ -141,7 +138,7 @@ h2 {
     font-size: 4rem;
     font-style: normal;
     font-weight: 500;
-    line-height: 140%;
+    line-height: 60px;
 }
 
 h3 {
@@ -151,7 +148,7 @@ h3 {
     font-size: 3rem;
     font-style: normal;
     font-weight: 500;
-    line-height: 140%;
+    line-height: 40px;
 }
 
 caption {

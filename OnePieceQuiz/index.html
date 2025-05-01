@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>One Piece Character Quiz</title>
+</head>
+
+<body>
+    <div id="quiz-container">
+        <div id="start-screen">
+            <img src="OnePieceTitle.png" alt="One Piece Logo" id="logo"/>
+            <h1>Which One Piece Character Are You?</h1>
+            <button id="start-button">Set Sail!</button>
+        </div>
+
+        <div id="question-screen">
+            <h2 id="question-text"></h2>
+            <div id="options-container"></div>
+        </div>
+
+        <div id="results-screen" class="hidden>
+            <h2 id="result-text"></h2>
+            <button onclick="location.reload()">Try again</button>
+        </div>
+    </div>
+
+    <script src="javaS.js"></script>
+</body>
+</html>

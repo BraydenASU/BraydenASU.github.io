@@ -124,6 +124,49 @@ const scores = {
   Franky: 0,
 };
 
+const characters = {
+  luffy: {
+    name: "Luffy",
+    description: "The optimistic and fearless captain of the Straw Hat Pirates. Luffy can stretch his body like rubber, thanks to eating the Gum-Gum Fruit (Gomu Gomu no Mi). He’s determined to become the Pirate King and values his friends above all.",
+    image: "LuffyOnePiece.webp"
+  },
+  zoro: {
+    name: "Zoro",
+    description: "The swordsman of the Straw Hat Pirates, known for his impressive swordsmanship and his goal to become the world’s greatest swordsman. Zoro uses a unique three-sword fighting style (Santoryu) and is fiercely loyal to Luffy.",
+    image: "ZoroOnePiece.webp"
+  },
+  nami: {
+    name: "Nami",
+    description: "The clever and resourceful navigator of the crew. She’s known for her exceptional map-making and navigation skills and is also very money-driven. Nami is essential to the crew, helping them navigate the vast seas.",
+    image: "NamiOnePiece.webp"
+  },
+  usopp: {
+    name: "Usopp",
+    description: "The sharpshooter and inventor of the crew. Usopp is a coward at heart, but has a strong desire to become brave like his father, Yasopp. He’s skilled with his slingshot and creates various gadgets and weapons to help the crew.",
+    image: "UsoppOnePiece.webp"
+  },
+  sanji: {
+    name: "Sanji",
+    description: "The cook of the Straw Hat Pirates, renowned for his cooking skills and powerful kicks in battle. Sanji dreams of finding the All Blue, a legendary sea where all the world’s oceans meet. He is a hopeless romantic and often flirtatious.",
+    image: "SanjiOnePiece.webp"
+  },
+  chopper: {
+    name: "Chopper",
+    description: "The crew's doctor, Chopper is a reindeer who ate the Human-Human Fruit (Hito Hito no Mi), granting him the ability to transform into a human form. He’s sweet and caring, with a deep love for helping others and learning about medicine.",
+    image: "ChopperOnePiece.webp"
+  },
+  robin: {
+    name: "Robin",
+    description: "The crew's archaeologist, Robin, can produce extra limbs from any surface thanks to the powers of the Hana Hana no Mi. She’s intelligent, calm, and deeply interested in uncovering the world's lost history.",
+    image: "RobinOnePiece.webp"
+  },
+  franky: {
+    name: "Franky",
+    description: "The shipwright of the Straw Hat Pirates and the creator of their ship, the Thousand Sunny. Franky is a cyborg with a tough personality and a love for building. He’s also known for his “Franky Family” and his battle-ready strength.",
+    image: "FrankyOnePiece.webp"
+  }
+}
+
 const startScreen = document.getElementById("start-screen");
 const questionScreen = document.getElementById("question-screen");
 const resultScreen = document.getElementById("result-screen");
@@ -166,5 +209,5 @@ function showResult() {
   const winner = Object.keys(scores).reduce((a, b) =>
     scores[a] > scores[b] ? a : b
   );
-  resultText.textContent = `You're most like ${winner}!`;
+  resultText.textContent = `Your character is... ${winner}!`;
 }

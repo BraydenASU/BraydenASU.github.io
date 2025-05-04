@@ -15,19 +15,26 @@
 
 <body>
     <div id="quiz-container">
+        <!-- Start Screen -->
         <div id="start-screen">
             <h1>Which One Piece Character Are You?</h1>
-            <img src="OnePieceTitle.png" alt="One Piece Logo" id="logo"/>
+            <img src="OnePieceTitle.png" alt="One Piece Logo" id="logo" />
             <button id="start-button">Set Sail!</button>
         </div>
 
-        <div id="question-screen">
+        <!-- Question Screen -->
+        <div id="question-screen" class="screen hidden">
+            <div id="progress-container"> <!-- Progress bar -->
+                <div id="progress-bar"></div>
+            </div>
             <h2 id="question-text"></h2>
-            <div id="options-container"></div>
+            <div id="options-container" class="grid-container"></div>
         </div>
 
-        <div id="results-screen" class="hidden>
-            <h2 id="result-text"></h2>
+        <!-- Result Screen -->
+        <div id="results-screen" class="hidden">
+            <h2 id="result-text">
+            </h2>
             <button onclick="location.reload()">Try again</button>
         </div>
     </div>

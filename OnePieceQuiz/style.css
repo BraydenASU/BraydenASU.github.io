@@ -1,8 +1,12 @@
 * {
     --Slate: #1e1e1e;
     --NavyBlue: #003366;
-    font-size: 16px;
-    /* I use 16 px here because I want to use px instead of pt. 12pt is roughly equal to 16px. */
+    --Darker: #001f3f;
+    font-size: 16px; /* I use 16 px here because I want to use px instead of pt. 12pt is roughly equal to 16px. */
+}
+
+.hidden {
+    display: none;
 }
 
 body {
@@ -19,10 +23,9 @@ body {
     align-items: center;
     height: 100vh;
     text-align: center;
-    background-color: #03254c;
+    background-color: var(--Darker);
     padding: 40px;
     border-radius: 2rem;
-
 }
 
 #start-screen>h1 {
@@ -60,5 +63,81 @@ body {
 }
 
 #start-button:hover {
-    transform: scale(1.1);
+    transform: scale(1.1);  /* Grows on hover */
+}
+
+#question-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: var(--NavyBlue);
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    font-family: "Pirata One", cursive;
+}
+
+#progress-container {
+    width: 100%;
+    background-color: white;
+    height: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 1rem 0;
+}
+
+#progress-bar {
+    height: 100%;
+    width: 0%;
+    background-color: red;
+    transition: width 1s ease;
+}
+
+#question-text {
+    font-size: 7rem;
+    margin-bottom: 2rem;
+}
+
+#options-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    width: 100%;
+}
+
+#options-container button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 1rem;
+    border-radius: 1rem;
+    font-size: 4rem;
+    cursor: pointer;
+    font-family: "Pirata One", cursive;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+#options-container button:hover {
+    background-color: orangered;
+    transform: scale(1.05);
+}
+
+#results-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: var(--Darker);
+    color: white;
+    font-family: "Quicksand", sans-serif;
+    padding: 2rem;
+    text-align: center;
+}
+
+#result-text {
+    font-size: 2rem;
+    margin-bottom: 2rem;
 }

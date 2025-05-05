@@ -192,10 +192,37 @@ body {
     cursor: pointer;
 }
 
+#past-results {
+    font-size: 1.75rem;
+}
+
 .result-right img {
     position: absolute;
     right: 0;
     bottom: 150;
     max-height: 100vh;
     object-fit: contain;
+}
+
+#history-container {
+    padding: 2rem;
+    background-color: var(--Slate);
+    color: white;
+    font-family: "Pirata One", cursive;
+    width: 69vw;
+}
+
+.past-result {
+    border-bottom: 2px solid white;
+    margin-bottom: 2rem;
+}
+
+.past-result h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.past-result p {
+    font-size: 1.5rem;
+    color: #ccc;
 }

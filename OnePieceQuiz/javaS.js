@@ -248,3 +248,36 @@ function restartQuiz() {
   resultScreen.classList.add("hidden");
   startScreen.classList.remove("hidden");
 }
+
+function saveResultToHistory(resultData) {
+  let history = JSON.parse(localStorage.getItem("quizHistory")) || [];
+  history.push(resultData);
+  localStorage.setItem("quizHistory", JSON.stringify(history));
+}
+
+function showPastResults() {
+  const history = JSON.parse(localStorage.getItem("quizHistory")) || [];
+  const historyContainer = document.getElementById("history-container");
+  historyContainer.innerHTML = ""; // Clear previous display
+
+  if (history.length === 0) {
+      historyContainer.innerHTML = "<p>No previous results found.</p>";
+  } else {
+      history.forEach(entry => {
+          const div = document.createElement("div");
+          div.classList.add("past-result");
+
+          div.innerHTML = `
+              <h2>${entry.character}</h2>
+              <p>Completed on: ${new Date(entry.timestamp).toLocaleString()}</p>
+          `;
+
+          historyContainer.appendChild(div);
+      });
+  }
+
+  historyContainer.classList.remove("hidden");
+}
+
+// Hook up the "View Past Results" button
+document.getElementById("past-results").addEventListener("click", showPastResults);

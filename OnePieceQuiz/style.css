@@ -109,7 +109,7 @@ body {
     width: 100%;
 }
 
-#options-container button {
+#options-container>button {
     background-color: red;
     color: white;
     border: none;
@@ -121,7 +121,7 @@ body {
     transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
-#options-container button:hover {
+#options-container>button:hover {
     background-color: orangered;
     transform: scale(1.05);
 }
@@ -184,12 +184,17 @@ body {
     border: none;
     height: 100px;
     width: 150px;
-    padding: 0.7rem 1.5rem;
+    padding: 1rem;
     font-size: 2rem;
     border-radius: 50%;
     margin-bottom: 2rem;
     margin-left: 2rem;
     cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.result-left>button:hover {
+    transform: scale(1.1);
 }
 
 #past-results {

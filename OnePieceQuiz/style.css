@@ -2,7 +2,8 @@
     --Slate: #1e1e1e;
     --NavyBlue: #003366;
     --Darker: #001f3f;
-    font-size: 16px; /* I use 16 px here because I want to use px instead of pt. 12pt is roughly equal to 16px. */
+    font-size: 16px;
+    /* I use 16 px here because I want to use px instead of pt. 12pt is roughly equal to 16px. */
 }
 
 .hidden {
@@ -10,7 +11,7 @@
 }
 
 body {
-    background-color: var(--Slate);
+    background-color: var(--Darker);
     height: 100%;
     margin: 0;
     padding: 0;
@@ -63,7 +64,8 @@ body {
 }
 
 #start-button:hover {
-    transform: scale(1.1);  /* Grows on hover */
+    transform: scale(1.1);
+    /* Grows on hover */
 }
 
 #question-screen {
@@ -124,20 +126,76 @@ body {
     transform: scale(1.05);
 }
 
-#results-screen {
+.result-screen {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    min-height: 100vh;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    padding: 40px;
     background-color: var(--Darker);
     color: white;
-    font-family: "Quicksand", sans-serif;
-    padding: 2rem;
-    text-align: center;
+    font-family: 'Pirata One', cursive;
 }
 
-#result-text {
-    font-size: 2rem;
+.result-left {
+    font-family: "Pirata One", cursive;
+    color: white;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 2rem;
+}
+
+.result-right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 100%;
+}
+
+.result-left h1 {
+    font-size: 7rem;
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+}
+
+.result-left p {
+    max-width: 70vw;
+    font-size: 3rem;
     margin-bottom: 2rem;
+    margin-left: 1rem;
+}
+
+.jolly-roger {
+    align-items: flex-end;
+    width: 30rem;
+    margin: 0;
+}
+
+.result-left>button {
+    font-family: "Pirata One", cursive;
+    background: red;
+    color: white;
+    border: none;
+    height: 100px;
+    width: 150px;
+    padding: 0.7rem 1.5rem;
+    font-size: 2rem;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+    cursor: pointer;
+}
+
+.result-right img {
+    position: absolute;
+    right: 0;
+    bottom: 150;
+    max-height: 100vh;
+    object-fit: contain;
 }

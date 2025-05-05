@@ -23,7 +23,7 @@
         </div>
 
         <!-- Question Screen -->
-        <div id="question-screen" class="screen hidden">
+        <div id="question-screen" class="hidden">
             <div id="progress-container"> <!-- Progress bar -->
                 <div id="progress-bar"></div>
             </div>
@@ -32,11 +32,17 @@
         </div>
 
         <!-- Result Screen -->
-        <div id="results-screen" class="hidden">
-            <h2 id="result-text">
-            </h2>
-            <button onclick="location.reload()">Try again</button>
-        </div>
+        <div id="result-screen" class="hidden">
+            <div class="result-left">
+              <h1 id="result-name"></h1>
+              <p id="result-description"></p>
+              <img src="StrawhatJollyRodger.webp" alt="Straw Hat Jolly Roger" class="jolly-roger" />
+              <button onclick="restartQuiz()">Restart Quiz</button>
+            </div>
+            <div class="result-right">
+              <img id="result-image" src="RobinOnePiece.webp" alt="Nico Robin" />
+            </div>
+          </div>
     </div>
 
     <script src="javaS.js"></script>

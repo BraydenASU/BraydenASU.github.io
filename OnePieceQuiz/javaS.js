@@ -1,3 +1,5 @@
+
+
 const questions = [
   {
     number: 1,
@@ -12,6 +14,7 @@ const questions = [
     ],
   },
   {
+    number: 2,
     question: "Question 2: Which word describes you best?",
     options: [
       { text: "Courageous", character: "Usopp" },
@@ -23,6 +26,7 @@ const questions = [
     ],
   },
   {
+    number: 3,
     question: "Question 3: What's your dream?",
     options: [
       { text: "Freedom and adventure", character: "Luffy" },
@@ -34,6 +38,7 @@ const questions = [
     ],
   },
   {
+    number: 4,
     question: "Question 4: Pick a weapon:",
     options: [
       { text: "Lazers", character: "Franky" },
@@ -45,6 +50,7 @@ const questions = [
     ],
   },
   {
+    number: 5,
     question: "Question 5: How do you handle problems?",
     options: [
       { text: "Charge in head first", character: "Luffy" },
@@ -56,6 +62,7 @@ const questions = [
     ],
   },
   {
+    number: 6,
     question: "Question 6: Pick your favorite place:",
     options: [
       { text: "The open sea", character: "Luffy" },
@@ -67,6 +74,7 @@ const questions = [
     ],
   },
   {
+    number: 7,
     question: "Question 7: What is your favorite food/drink?",
     options: [
       { text: "MEAT", character: "Luffy" },
@@ -78,6 +86,7 @@ const questions = [
     ],
   },
   {
+    number: 8,
     question: "Question 8: In your crew, what would your role be?",
     options: [
       { text: "Captain", character: "Luffy" },
@@ -89,6 +98,7 @@ const questions = [
     ],
   },
   {
+    number: 9,
     question: "Question 9: What motivates you most?",
     options: [
       { text: "Freedom", character: "Luffy" },
@@ -100,6 +110,7 @@ const questions = [
     ],
   },
   {
+    number: 10,
     question: "Question 10: What's your biggest strength?",
     options: [
       { text: "Fearlessness", character: "Luffy" },
@@ -207,7 +218,23 @@ function showResult() {
   questionScreen.classList.add("hidden");
   resultScreen.classList.remove("hidden");
   const winner = Object.keys(scores).reduce((a, b) =>
-    scores[a] > scores[b] ? a : b
-  );
-  resultText.textContent = `Your character is... ${winner}!`;
+    scores[a] > scores[b] ? a : b);
+  const charData = characters[winner.toLowerCase()];
+  if (!charData) {
+    console.error("Character data not found for: ", winner);
+    return;
+  }
+  document.getElementById("result-name").textContent = `Your character is... ${charData.name}!`;
+  document.getElementById("result-description").textContent = charData.description;
+  document.getElementById("result-image").src = charData.image;
+  document.getElementById("result-image").alt = charData.name;
+}
+
+function restartQuiz() {
+  currentQuestion = 0;
+  for (let char in scores) {
+    scores[char] = 0;
+  }
+  resultScreen.classList.add("hidden");
+  startScreen.classList.remove("hidden");
 }

@@ -261,23 +261,25 @@ function showPastResults() {
   historyContainer.innerHTML = ""; // Clear previous display
 
   if (history.length === 0) {
-      historyContainer.innerHTML = "<p>No previous results found.</p>";
+    historyContainer.innerHTML = "<p>No previous results found.</p>";
   } else {
-      history.forEach(entry => {
-          const div = document.createElement("div");
-          div.classList.add("past-result");
+    history.forEach((entry) => {
+      const div = document.createElement("div");
+      div.classList.add("past-result");
 
-          div.innerHTML = `
+      div.innerHTML = `
               <h2>${entry.character}</h2>
               <p>Completed on: ${new Date(entry.timestamp).toLocaleString()}</p>
           `;
 
-          historyContainer.appendChild(div);
-      });
+      historyContainer.appendChild(div);
+    });
   }
 
   historyContainer.classList.remove("hidden");
 }
 
 // Hook up the "View Past Results" button
-document.getElementById("past-results").addEventListener("click", showPastResults);
+document
+  .getElementById("past-results")
+  .addEventListener("click", showPastResults);

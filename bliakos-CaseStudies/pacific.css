@@ -21,6 +21,7 @@ nav {
     background-color: #BBDEFB;
     font-weight: bold;
 }
+
 /* Remove underline from nav links */
 nav a {
     text-decoration: none;
@@ -31,10 +32,12 @@ h1 {
     margin-bottom: 0;
     font-family: Georgia, 'Times New Roman', serif;
 }
+
 h2 {
     color: #1976D2;
     font-family: Georgia, 'Times New Roman', serif;
 }
+
 h3 {
     color: #000033;
     font-family: Georgia, 'Times New Roman', serif;

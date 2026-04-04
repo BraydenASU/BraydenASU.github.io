@@ -2,25 +2,55 @@
 body {
     background-color: #FFFFFF;
     color: #555555;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Header */
 header {
     background-color: #002171;
     color: #FFFFFF;
+    background-image: url("sunset.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
+    line-height: 400%;
+    text-indent: 1em;
 }
 
 /* Navigation */
 nav {
     background-color: #BBDEFB;
+    font-weight: bold;
+}
+/* Remove underline from nav links */
+nav a {
+    text-decoration: none;
 }
 
 /* Headings */
 h1 {
     margin-bottom: 0;
+    font-family: Georgia, 'Times New Roman', serif;
 }
 h2 {
     color: #1976D2;
+    font-family: Georgia, 'Times New Roman', serif;
+}
+h3 {
+    color: #000033;
+    font-family: Georgia, 'Times New Roman', serif;
+}
+
+/* List marker image */
+ul {
+    list-style-image: url("marker.gif");
+}
+
+/* Footer */
+footer {
+    font-size: 75%;
+    font-style: italic;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', serif;
 }
 
 /* Description terms */
@@ -28,7 +58,13 @@ dt {
     color: #002171;
 }
 
-/* Special class */
+/* Resort class */
 .resort {
     color: #1976D2;
+    font-weight: bold;
+}
+
+/* Contact ID */
+#contact {
+    font-size: font-size: 90%;
 }

@@ -1,8 +1,20 @@
 /* Global */
 body {
-    background-color: #FFFFFF;
-    color: #555555;
+    background-color: #90C7E3;
+    background-image: linear-gradient(#FFFFFF, );
+    background-repeat: no-repeat;
+    color: #666666;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+#wrapper {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #FFFFFF;
+    min-width: 960px;
+    max-width: 2048px;
+    box-shadow: 3px 3px 3px #333333;
 }
 
 /* Header */
@@ -14,21 +26,27 @@ header {
     background-position: right;
     line-height: 400%;
     text-indent: 1em;
+    height: 60px;
+    text-align: center;
+    padding-top: 15px;
 }
 
 /* Navigation */
 nav {
-    background-color: #BBDEFB;
+    background-color: #FFFFFF;
+    text-align: center;
+    padding: 1em;
     font-weight: bold;
 }
 
-/* Remove underline from nav links */
 nav a {
     text-decoration: none;
+    /* Remove underline from nav links */
 }
 
 /* Headings */
 h1 {
+    margin-top: 0;
     margin-bottom: 0;
     font-family: Georgia, 'Times New Roman', serif;
 }
@@ -36,11 +54,18 @@ h1 {
 h2 {
     color: #1976D2;
     font-family: Georgia, 'Times New Roman', serif;
+    text-shadow: 1px 1px #CCCCCC;
 }
 
 h3 {
     color: #000033;
     font-family: Georgia, 'Times New Roman', serif;
+}
+
+/* Main */
+main {
+    display: block;
+    padding: 1px 20px 20px 20px;
 }
 
 /* List marker image */
@@ -54,6 +79,7 @@ footer {
     font-style: italic;
     text-align: center;
     font-family: Georgia, 'Times New Roman', serif;
+    padding: 2em;
 }
 
 /* Description terms */
@@ -70,4 +96,26 @@ dt {
 /* Contact ID */
 #contact {
     font-size: font-size: 90%;
+}
+
+/* Hero images */
+#homehero {
+    height: 300px;
+    background-image: url("coast.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#yurthero {
+    height: 300px;
+    background-image: url("yurt.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#trailhero {
+    height: 300px;
+    background-image: url("trail.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }

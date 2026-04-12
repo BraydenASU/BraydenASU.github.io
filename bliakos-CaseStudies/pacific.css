@@ -1,174 +1,176 @@
 /* Global */
 
-* { box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+}
 
 body {
-    background-color: #EAEAEA;
-    color: #666666;
-    font-family: Arial, Helvetica, sans-serif;
+  background-color: #eaeaea;
+  color: #666666;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 #wrapper {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #90C7E3;
-    min-width: 960px;
-    max-width: 2048px;
-    box-shadow: 3px 3px 3px #333333;
-    border: 1px solid #000033;
-    background-image: linear-gradient(to bottom, #FFFFFF, #90C7E3);
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #90c7e3;
+  min-width: 960px;
+  max-width: 2048px;
+  box-shadow: 3px 3px 3px #333333;
+  border: 1px solid #000033;
+  background-image: linear-gradient(to bottom, #ffffff, #90c7e3);
 }
 
 /* Header */
 header {
-    background-color: #000033;
-    color: #FFFFFF;
-    line-height: 400%;
-    text-indent: 1em;
-    height: 120px;
-    text-align: center;
-    padding-top: 30px;
-    padding-left: 3em;
+  background-color: #000033;
+  color: #ffffff;
+  line-height: 400%;
+  text-indent: 1em;
+  height: 120px;
+  text-align: center;
+  padding-top: 30px;
+  padding-left: 3em;
 }
 
 header a {
-    text-decoration: none; /* Remove underline from header links */
+  text-decoration: none; /* Remove underline from header links */
 }
 
 header a:link,
 header a:visited {
-    color: #FFFFFF;
+  color: #ffffff;
 }
 
 header a:hover {
-    color: #90C7E3;
+  color: #90c7e3;
 }
 
 /* Navigation */
 nav {
-    float: left;
-    width: 160px;
-    padding: 1.5em;
-    font-size: 120%;
-    font-weight: bold;
+  float: left;
+  width: 160px;
+  padding: 1.5em;
+  font-size: 120%;
+  font-weight: bold;
 }
 
 nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding-left: 0;
-    font-size: 1.2em;
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+  font-size: 1.2em;
 }
 
 nav a {
-    text-decoration: none;
-    /* Remove underline from nav links */
+  text-decoration: none;
+  /* Remove underline from nav links */
 }
 
 nav a:link {
-    color: #5C7FA3;
+  color: #5c7fa3;
 }
 
 nav a:visited {
-    color: #344873;
+  color: #344873;
 }
 
 nav a:hover {
-    color: #A52A2A;
+  color: #a52a2a;
 }
 
 /* Headings */
 h1 {
-    margin-top: 0;
-    margin-bottom: 0;
-    font-family: Georgia, 'Times New Roman', serif;
-    font-size: 3em;
-    letter-spacing: .25em;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 3em;
+  letter-spacing: 0.25em;
 }
 
 h2 {
-    color: #1976D2;
-    font-family: Georgia, 'Times New Roman', serif;
-    text-shadow: 1px 1px #CCCCCC;
+  color: #1976d2;
+  font-family: Georgia, "Times New Roman", serif;
+  text-shadow: 1px 1px #cccccc;
 }
 
 h3 {
-    color: #000033;
-    font-family: Georgia, 'Times New Roman', serif;
+  color: #000033;
+  font-family: Georgia, "Times New Roman", serif;
 }
 
 /* Main */
 main {
-    background-color: #FFFFFF;
-    margin-left: 190px;
-    padding-left: 30px;
-    display: block;
-    padding: 1px 20px 20px 20px;
-    overflow: auto;
+  background-color: #ffffff;
+  margin-left: 190px;
+  padding-left: 30px;
+  display: block;
+  padding: 1px 20px 20px 20px;
+  overflow: auto;
 }
 
 /* List marker image */
 main ul {
-    list-style-position: inside;
-    list-style-image: url(marker.gif);
+  list-style-position: inside;
+  list-style-image: url(marker.gif);
 }
 
 section {
-    float: left;
-    width: 33%;
-    padding-left: 2em;
-    padding-right: 2em;
+  float: left;
+  width: 33%;
+  padding-left: 2em;
+  padding-right: 2em;
 }
 
 /* Footer */
 footer {
-    margin-left: 190px;
-    background-color: #FFFFFF;
-    font-size: 75%;
-    font-style: italic;
-    text-align: center;
-    font-family: Georgia, 'Times New Roman', serif;
-    padding: 2em;
+  margin-left: 190px;
+  background-color: #ffffff;
+  font-size: 75%;
+  font-style: italic;
+  text-align: center;
+  font-family: Georgia, "Times New Roman", serif;
+  padding: 2em;
 }
 
 /* Description terms */
 dt {
-    color: #002171;
+  color: #002171;
 }
 
 /* Resort class */
 .resort {
-    color: #1976D2;
-    font-weight: bold;
+  color: #1976d2;
+  font-weight: bold;
 }
 
 /* Contact ID */
 #contact {
-    font-size: 90%;
+  font-size: 90%;
 }
 
 /* Hero images */
 #homehero {
-    margin-left: 190px;
-    height: 300px;
-    background-image: url(coast2.jpg);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+  margin-left: 190px;
+  height: 300px;
+  background-image: url(coast2.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 
 #yurthero {
-    margin-left: 190px;
-    height: 300px;
-    background-image: url(yurt.jpg);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+  margin-left: 190px;
+  height: 300px;
+  background-image: url(yurt.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 
 #trailhero {
-    margin-left: 190px;
-    height: 300px;
-    background-image: url(trail.jpg);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+  margin-left: 190px;
+  height: 300px;
+  background-image: url(trail.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }

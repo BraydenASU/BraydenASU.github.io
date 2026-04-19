@@ -11,6 +11,23 @@ header {
   background-color: #bdb4ff;
 }
 
+.container h3 {
+  background-color: #808034;
+  padding: 0.5em;
+  margin-bottom: 0.25em;
+}
+
+.description {
+  background-color: #bdb4ff;
+  padding: 0.5em;
+}
+
+.caption {
+  font-style: italic;
+  margin: 0;
+  padding: 0;
+  font-size: 0.8em;
+}
 
 /* NAV BAR */
 nav ul {
@@ -24,7 +41,7 @@ nav ul {
 }
 
 nav {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 nav a {
@@ -50,7 +67,7 @@ nav a:hover {
 /* MAIN LAYOUT */
 .container {
   display: flex;
-  align-items: flex-start
+  align-items: flex-start;
 }
 
 /* MAIN CONTENT */
@@ -64,6 +81,27 @@ aside {
   flex: 1;
   padding: 1em;
   border-left: 1px solid black;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  background-color: #723480;
+}
+
+aside p {
+  margin: 0;
+  padding-bottom: 0.5em;
+}
+
+aside a {
+  text-decoration: none;
+}
+
+aside a:link,
+aside a:visited {
+  color: #bdb4ff;
+}
+
+aside a:hover {
+  color: #808034;
 }
 
 /* GAME CARD */
@@ -73,6 +111,7 @@ aside {
 }
 
 .media {
+  background-color: #723480;
   height: 200px;
   border: 1px solid black;
   margin: 1em 0;
@@ -93,7 +132,8 @@ form {
   max-width: 400px;
 }
 
-input, textarea {
+input,
+textarea {
   margin-bottom: 0.5em;
 }
 
@@ -107,12 +147,15 @@ footer {
 .footer-container {
   display: flex;
   justify-content: space-between;
-  gap: 2em;
+  gap: 0;
 }
 
 /* form side */
 .footer-form {
   flex: 2;
+  background-color: #bdb4ff;
+  padding-left: 1em;
+  padding-bottom: 1em;
 }
 
 .footer-form form {
@@ -125,9 +168,12 @@ footer {
 .footer-contact {
   flex: 1;
   text-align: right;
+  background-color: #808034;
+  padding-right: 1em;
 }
 
 /* spacing */
-input, textarea {
+input,
+textarea {
   margin-bottom: 0.5em;
 }

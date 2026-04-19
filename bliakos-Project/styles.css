@@ -19,11 +19,19 @@ header {
   background-color: #808034;
   padding: 0.5em;
   margin-bottom: 0.25em;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.intro ul {
+  line-height: 2;
 }
 
 .description {
   background-color: #bdb4ff;
   padding: 0.5em;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
 }
 
 .caption {
@@ -161,6 +169,8 @@ footer {
   display: flex;
   justify-content: space-between;
   gap: 0;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
 }
 
 /* form side */

@@ -137,8 +137,172 @@ aside a:hover {
   border: 1px solid black;
   margin: 1em 0;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.herocontainer {
+  display: flex;
+}
+
+#homehero1 {
+  background-image: url(BotW.jpg);
+  height: 400px;
+  background-size: 100% 100%;
+  flex: 1;
+  background-repeat: no-repeat;
+}
+
+#homehero1-2 {
+  background-image: url(BotW2.jpg);
+  height: 400px;
+  background-size: 100% 100%;
+    flex: 1;
+  background-repeat: no-repeat;
+}
+
+#homehero2 {
+  background-image: url(rdr2.jpg);
+  height: 400px;
+  background-size: 100% 100%;
+  flex: 1;
+  background-repeat: no-repeat;
+}
+
+#homehero2-2 {
+  background-image: url(rdr22.jpg);
+  height: 400px;
+  background-size: 100% 100%;
+  flex: 1;
+  background-repeat: no-repeat;
+}
+
+#homehero3 {
+  background-image: url();
+  height: 400px;
+  background-size: 100% 100%;
+  flex: 1;
+  background-repeat: no-repeat;
+}
+
+#homehero3-2 {
+  background-image: url();
+  height: 400px;
+  background-size: 100% 100%;
+  flex: 1;
+  background-repeat: no-repeat;
+}
+
+#homehero4 {
+  background-image: url();
+  height: 400px;
+  background-size: 100% 100%;
+  flex: 1;
+  background-repeat: no-repeat;
+}
+
+#homehero4-2 {
+  background-image: url();
+  height: 400px;
+  background-size: 100% 100%;
+  flex: 1;
+  background-repeat: no-repeat;
+}
+
+#homehero5 {
+  background-image: url();
+  height: 400px;
+  background-size: 100% 100%;
+  flex: 1;
+  background-repeat: no-repeat;
+}
+
+#homehero5-2 {
+  background-image: url();
+  height: 400px;
+  background-size: 100% 100%;
+  flex: 1;
+  background-repeat: no-repeat;
+}
+
+#homehero6 {
+  background-image: url();
+  height: 400px;
+  background-size: 100% 100%;
+  flex: 1;
+  background-repeat: no-repeat;
+}
+
+#homehero6-2 {
+  background-image: url();
+  height: 400px;
+  background-size: 100% 100%;
+  flex: 1;
+  background-repeat: no-repeat;
+}
+
+#homehero7 {
+  background-image: url();
+  height: 400px;
+  background-size: 100% 100%;
+  flex: 1;
+  background-repeat: no-repeat;
+}
+
+#homehero7-2 {
+  background-image: url();
+  height: 400px;
+  background-size: 100% 100%;
+  flex: 1;
+  background-repeat: no-repeat;
+}
+
+#homehero8 {
+  background-image: url();
+  height: 400px;
+  background-size: 100% 100%;
+  flex: 1;
+  background-repeat: no-repeat;
+}
+
+#homehero8-2 {
+  background-image: url();
+  height: 400px;
+  background-size: 100% 100%;
+  flex: 1;
+  background-repeat: no-repeat;
+}
+
+#homehero9 {
+  background-image: url();
+  height: 400px;
+  background-size: 100% 100%;
+  flex: 1;
+  background-repeat: no-repeat;
+}
+
+#homehero9-2 {
+  background-image: url();
+  height: 400px;
+  background-size: 100% 100%;
+  flex: 1;
+  background-repeat: no-repeat;
+}
+
+#homehero10 {
+  background-image: url(p5r.jpg);
+  height: 400px;
+  background-size: 100% 100%;
+  flex: 1;
+  background-repeat: no-repeat;
+}
+
+#homehero10-2 {
+  background-image: url(p5r2.jpg);
+  height: 400px;
+  background-size: 100% 100%;
+  flex: 1;
+  background-repeat: no-repeat;
 }
 
 /* FORM */

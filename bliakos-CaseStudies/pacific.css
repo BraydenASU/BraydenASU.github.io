@@ -153,13 +153,14 @@ dt {
 }
 
 table {
-  border: 2px solid #3399CC;
+  border: 2px solid #3399cc;
   border-collapse: collapse;
 }
 
-td, th {
+td,
+th {
   padding: 0.5em;
-  border: 2px solid #3399CC;
+  border: 2px solid #3399cc;
 }
 
 td {
@@ -171,7 +172,7 @@ td {
 }
 
 tr:nth-of-type(odd) {
-  background-color: #F5FAFC;
+  background-color: #f5fafc;
 }
 
 @media (min-width: 600px) {

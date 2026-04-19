@@ -1,0 +1,133 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #ffffe3;
+}
+
+/* HEADER */
+header {
+  padding: 1em;
+  text-align: center;
+  background-color: #bdb4ff;
+}
+
+
+/* NAV BAR */
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  background-color: #808034;
+}
+
+nav {
+    font-weight: bold;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+nav li {
+  padding: 0.5em;
+}
+
+nav a:link {
+  color: #723480;
+}
+
+nav a:visited {
+  color: #bdb4ff;
+}
+
+nav a:hover {
+  color: #ffffe3;
+}
+
+/* MAIN LAYOUT */
+.container {
+  display: flex;
+  align-items: flex-start
+}
+
+/* MAIN CONTENT */
+main {
+  flex: 3;
+  padding: 1em;
+}
+
+/* SIDEBAR */
+aside {
+  flex: 1;
+  padding: 1em;
+  border-left: 1px solid black;
+}
+
+/* GAME CARD */
+.game-card {
+  border-top: 2px solid black;
+  padding-top: 1em;
+}
+
+.media {
+  height: 200px;
+  border: 1px solid black;
+  margin: 1em 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* FORM */
+.feedback {
+  border-top: 2px solid black;
+  padding: 1em;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+}
+
+input, textarea {
+  margin-bottom: 0.5em;
+}
+
+/* FOOTER */
+footer {
+  border-top: 2px solid black;
+  padding: 1em;
+}
+
+/* side-by-side layout */
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 2em;
+}
+
+/* form side */
+.footer-form {
+  flex: 2;
+}
+
+.footer-form form {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+}
+
+/* contact side */
+.footer-contact {
+  flex: 1;
+  text-align: right;
+}
+
+/* spacing */
+input, textarea {
+  margin-bottom: 0.5em;
+}

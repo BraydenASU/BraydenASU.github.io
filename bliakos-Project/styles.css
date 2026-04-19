@@ -178,7 +178,7 @@ aside a:hover {
 }
 
 #homehero3 {
-  background-image: url();
+  background-image: url(odyssey.jpg);
   height: 400px;
   background-size: 100% 100%;
   flex: 1;
@@ -186,7 +186,7 @@ aside a:hover {
 }
 
 #homehero3-2 {
-  background-image: url();
+  background-image: url(odyssey2.jpg);
   height: 400px;
   background-size: 100% 100%;
   flex: 1;
@@ -194,7 +194,7 @@ aside a:hover {
 }
 
 #homehero4 {
-  background-image: url();
+  background-image: url(baldursgate.jpg);
   height: 400px;
   background-size: 100% 100%;
   flex: 1;
@@ -202,7 +202,7 @@ aside a:hover {
 }
 
 #homehero4-2 {
-  background-image: url();
+  background-image: url(baldursgate2.jpg);
   height: 400px;
   background-size: 100% 100%;
   flex: 1;
@@ -210,7 +210,7 @@ aside a:hover {
 }
 
 #homehero5 {
-  background-image: url();
+  background-image: url(fatamorgana.jpg);
   height: 400px;
   background-size: 100% 100%;
   flex: 1;
@@ -218,7 +218,7 @@ aside a:hover {
 }
 
 #homehero5-2 {
-  background-image: url();
+  background-image: url(fatamorgana2.jpg);
   height: 400px;
   background-size: 100% 100%;
   flex: 1;
@@ -226,7 +226,7 @@ aside a:hover {
 }
 
 #homehero6 {
-  background-image: url();
+  background-image: url(eldenring.jpg);
   height: 400px;
   background-size: 100% 100%;
   flex: 1;
@@ -234,7 +234,7 @@ aside a:hover {
 }
 
 #homehero6-2 {
-  background-image: url();
+  background-image: url(eldenring2.jpg);
   height: 400px;
   background-size: 100% 100%;
   flex: 1;
@@ -242,7 +242,7 @@ aside a:hover {
 }
 
 #homehero7 {
-  background-image: url();
+  background-image: url(tears.jpg);
   height: 400px;
   background-size: 100% 100%;
   flex: 1;
@@ -250,7 +250,7 @@ aside a:hover {
 }
 
 #homehero7-2 {
-  background-image: url();
+  background-image: url(tears2.jpg);
   height: 400px;
   background-size: 100% 100%;
   flex: 1;
@@ -258,7 +258,7 @@ aside a:hover {
 }
 
 #homehero8 {
-  background-image: url();
+  background-image: url(portal.jpg);
   height: 400px;
   background-size: 100% 100%;
   flex: 1;
@@ -266,7 +266,7 @@ aside a:hover {
 }
 
 #homehero8-2 {
-  background-image: url();
+  background-image: url(portal2.jpg);
   height: 400px;
   background-size: 100% 100%;
   flex: 1;
@@ -274,7 +274,7 @@ aside a:hover {
 }
 
 #homehero9 {
-  background-image: url();
+  background-image: url(hades2.jpg);
   height: 400px;
   background-size: 100% 100%;
   flex: 1;
@@ -282,7 +282,7 @@ aside a:hover {
 }
 
 #homehero9-2 {
-  background-image: url();
+  background-image: url(hades22.jpg);
   height: 400px;
   background-size: 100% 100%;
   flex: 1;
@@ -340,7 +340,7 @@ footer {
 /* form side */
 .footer-form {
   flex: 2;
-  background-color: #bdb4ff;
+  background-color: #723480;
   padding-left: 1em;
   padding-bottom: 1em;
 }

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Pirata+One&family=Quicksand:wght@300..700&display=swap"
+        rel="stylesheet" href="style.css">
+    <title>One Piece Character Quiz</title>
+</head>
+
+<body>
+    <div id="quiz-container">
+        <!-- Start Screen -->
+        <div id="start-screen">
+            <h1>Which One Piece Character Are You?</h1>
+            <img src="OnePieceTitle.png" alt="One Piece Logo" id="logo" />
+            <button id="start-button">Set Sail!</button>
+        </div>
+
+        <!-- Question Screen -->
+        <div id="question-screen" class="hidden">
+            <div id="progress-container"> <!-- Progress bar -->
+                <div id="progress-bar"></div>
+            </div>
+            <h1 id="question-text"></h1>
+            <div id="options-container" class="grid-container"></div>
+        </div>
+
+        <!-- Result Screen -->
+        <div id="result-screen" class="hidden">
+            <div class="result-left">
+                <h1 id="result-name"></h1>
+                <p id="result-description"></p>
+                <img src="StrawhatJollyRodger.webp" alt="Straw Hat Jolly Roger" class="jolly-roger" />
+                <button onclick="restartQuiz()">Restart Quiz</button>
+                <button id="past-results">View Past Results</button>
+                <div id="history-container" class="hidden"></div>
+            </div>
+            <div class="result-right">
+                <img id="result-image" src="RobinOnePiece.webp" alt="Nico Robin" />
+            </div>
+        </div>
+
+    </div>
+
+    <script src="javaS.js"></script>
+</body>
+
+</html>
